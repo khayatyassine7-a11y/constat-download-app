@@ -1,0 +1,17 @@
+{
+  "name": "constat-auto-maroc",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@google-cloud/vision": "^4.3.3",
+    "next": "14.2.15",
+    "pdf-lib": "^1.17.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}
