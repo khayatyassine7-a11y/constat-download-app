@@ -7,6 +7,9 @@
     "build": "next build",
     "start": "next start"
   },
+    "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
     "@google-cloud/vision": "^4.3.3",
 "next": "14.2.15",
