@@ -5,13 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "node": "16.x",
+ 
     "start": "next start"
   },
  
   "dependencies": {
     "@google-cloud/vision": "^4.3.3",
-"next": "14.2.15",
+"next": "14.2.25",
     "pdf-lib": "^1.17.1",
     "react": "18.3.1",
     "react-dom": "18.3.1"
