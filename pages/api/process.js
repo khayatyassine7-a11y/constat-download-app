@@ -4,13 +4,13 @@ import { demoStructured } from '../../lib/demoData';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
-     res.status(405).json({ error: 'Method not allowed' });
+    return res.status(405).json({ error: 'Method not allowed' });
   }
 
   try {
     const { images } = req.body || {};
     if (!images || typeof images !== 'object') {
-       res.status(400).json({ error: 'Images manquantes' });
+      return res.status(400).json({ error: 'Images manquantes' });
     }
 
     const textMap = {};
@@ -22,7 +22,7 @@ export default async function handler(req, res) {
 
     const hasAnyText = Object.values(textMap).some(Boolean);
     if (!hasAnyText) {
-       res.status(200).json(demoStructured);
+       return res.status(200).json(demoStructured);
     }
 
     const structured = buildStructuredFromTexts(textMap);
